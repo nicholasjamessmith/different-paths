@@ -1,0 +1,188 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+}
+
+.row1,
+.row2,
+.row3 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.row1 {
+  /*right: 173px;*/
+  gap: 160px;
+  margin-bottom: 150px;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  margin-bottom: 150px;
+}
+
+.row3 {
+  display: flex;
+  flex-direction: row;
+  /*left: 150px;*/
+  gap: 160px;
+}
+
+/* === Color Assignments === */
+
+/* Filled: lime green */
+.topFourth {
+  background-color: #7cd87c;
+}
+
+.middleThird {
+  background-color: #9de89d;
+}
+
+.bottomLeft {
+  background-color: #9ed79e;
+}
+
+/* Filled: orange */
+.topSecond {
+  background-color: #ffab5d;
+}
+
+.middleFifth {
+  background-color: #FFA500;
+}
+
+/* Filled: light grey */
+.middleLeft {
+  background-color: #D3D3D3;
+}
+
+.bottomThird {
+  background-color: #D3D3D3;
+}
+
+/* Inner border only: lime green */
+.topThird {
+  box-shadow: inset 0 0 0 2px #c0dfc0;
+}
+
+/* Inner border only: orange */
+.middleFourth {
+  box-shadow: inset 0 0 0 2px #e0c187;
+}
+
+/* Inner border only: light grey */
+.bottomSecond {
+  box-shadow: inset 0 0 0 2px #D3D3D3;
+}
+
+/* White (no style): topFourth, middleSecond, bottomFourth */
+
+/* === Responsive Breakpoints === */
+
+/* 1200px – 1800px */
+@media (max-width: 1800px) {
+  .square {
+    width: 100px;
+    height: 100px;
+  }
+
+  .row1 {
+    gap: 107px;
+    margin-bottom: 100px;
+  }
+
+  .row2 {
+    gap: 100px;
+    margin-bottom: 100px;
+  }
+
+  .row3 {
+    gap: 107px;
+  }
+}
+
+/* 600px – 1200px */
+@media (max-width: 1200px) {
+  .square {
+    width: 65px;
+    height: 65px;
+  }
+
+  .row1 {
+    gap: 69px;
+    margin-bottom: 65px;
+  }
+
+  .row2 {
+    gap: 65px;
+    margin-bottom: 65px;
+  }
+
+  .row3 {
+    gap: 69px;
+  }
+}
+
+/* 600px and below */
+@media (max-width: 600px) {
+  .square {
+    width: 40px;
+    height: 40px;
+  }
+
+  .row1 {
+    gap: 43px;
+    margin-bottom: 40px;
+  }
+
+  .row2 {
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .row3 {
+    gap: 43px;
+  }
+}
+
+@media (max-width: 400px) {
+  .square {
+    width: 30px;
+    height: 30px;
+  }
+
+  .row1 {
+    gap: 32px;
+    margin-bottom: 30px;
+  }
+
+  .row2 {
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .row3 {
+    gap: 32px;
+  }
+}
